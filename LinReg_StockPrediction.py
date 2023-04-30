@@ -32,9 +32,6 @@ X = preprocessing.scale(X)
 X_lately = X[-forecast_out:]
 X = X[:-forecast_out]
 
-
-
-
 df.dropna(inplace = True)
 y = np.array(df['label'])
 
