@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
-df = pd.read_csv(r'C:\Users\Katta\Downloads\job.csv')
+df = pd.read_csv(r'job.csv')
 exp = {np.nan:0,'five':5,'two':2,'seven':7,'three':3,'ten':10,'eleven':11}
 #df.replace({'experience':exp},inplace=True)
 df['experience'] = df['experience'].map(exp)
